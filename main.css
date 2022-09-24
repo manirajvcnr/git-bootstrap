@@ -1,11 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+*{
+    list-style: none;
+}
 body{
     margin: 0;
-    padding: 0;
+    padding: 0 30px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+
 }
 /* logo */
 .navbar{
@@ -29,17 +32,16 @@ li{
     color: #5cb874;
 }
 /* header container */
-.container-fluid{
-    height: 70vh;
+#welcome{
+    height: auto;
     color: #fff;
     text-align: center;
-    padding: 50px 10px;
-    background-image: url(./slide-1.jpg);
+    background-image: url(./images/slide-1.jpg);
     background-position: center;
     position: relative;
 }
 
-.container-fluid::after{
+#welcome::after{
     content: "";
     position: absolute;
     background-color: #5cb874;
@@ -48,15 +50,16 @@ li{
     top: 0;
     left: 0;
     opacity: 50%;
+    z-index: 0;
 }
 
 .content{
     text-align: center;
-    z-index: 1;
-    position: relative;
     margin: auto;
 }
-
+#welcome h1{
+    z-index: 1;
+}
 /* header content */
 .header-content{
     background-color: #f8fcf9;
@@ -73,4 +76,123 @@ li{
 }
 .col-lg-4 h3{
     padding: 10px 0;
+}
+
+/* about us */
+.about{
+    margin: auto;
+}
+#about-head{
+    text-align: center;
+    padding: 20px 0;
+}
+.headings h1{
+    position: relative;
+}
+.headings h1::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #5cb874;
+    bottom: -10px;
+    left: calc(50% - 20px);
+}
+.headings p{
+    padding: 10px 0;
+}
+
+/* about us content flex */
+.flex-about{
+    border: 0.5px solid lightgray;
+}
+.flex-about span{
+    font-size: 24px;
+    font-weight: 400;
+    color: #6ec083;
+}
+.flex-about p{
+    color: #aaaaaa;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+.flex-about h3{
+    font-size: 26px;
+    font-weight: 300;
+    padding: 0;
+    margin: 20px 0;
+}
+
+/* our clients */
+.our-clients{
+    padding: 25px 0;
+}
+.headings{
+    text-align: center;
+    padding: 25px 0;
+}
+#logo-flex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#logo-flex img{
+    height: 30px;
+    width: auto;
+    opacity: 0.5;
+}
+
+/* services */
+.service-content{
+    text-align: center;
+    padding: 25px 10px;
+    background: #fff;
+    box-shadow: 0px 5px 90px 0px rgb(110 123 131 / 10%);
+    margin: 10px 0;
+}
+#col-1 i{
+    color: #47aeff;
+}
+#col-2 i{
+    color: #ffa76e;
+}
+#col-3 i{
+    color: #e80368;
+}
+#col-4 i{
+    color: #ffbb2c;
+}
+#col-5 i{
+    color: #ff5828;
+}
+#col-6 i{
+    color: #11dbcf;
+}
+
+/* portfolio */
+.key p{
+    margin: 0 5px;
+    height: 25px;
+    width: 50px;
+    text-align: center;
+}
+.all{
+    background-color: #5cb874;
+    color: #fff;
+    border-radius: 3px;
+}
+#sect-1 img{
+    width: 100%;
+    margin: 5px;
+}
+#sect-2 img{
+    width: 100%;
+    margin: 5px;
+}
+#sect-3 img{
+    width: 100%;
+    margin: 5px;
+
 }
