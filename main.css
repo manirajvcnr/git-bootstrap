@@ -1,38 +1,48 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*{
+
+* {
     list-style: none;
 }
-body{
+
+body {
     margin: 0;
     padding: 0 30px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
 }
+body a{
+    text-decoration: none;
+    color: #fff;
+}
+
 /* logo */
-.navbar{
+.navbar {
     height: 80px;
     background-color: white;
     z-index: 997;
 }
-.green{
+
+.logo {
     font-size: 32px;
     color: #5cb874;
     font-weight: 700;
 }
-li{
+
+li {
     padding: 5px;
 }
-.nav-link{
+
+.nav-link {
     font-size: 15px;
     color: #222222;
 }
-#home{
+
+#home {
     color: #5cb874;
 }
+
 /* header container */
-#welcome{
+#welcome {
     height: auto;
     color: #fff;
     text-align: center;
@@ -41,7 +51,7 @@ li{
     position: relative;
 }
 
-#welcome::after{
+#welcome::after {
     content: "";
     position: absolute;
     background-color: #5cb874;
@@ -49,47 +59,55 @@ li{
     height: 100%;
     top: 0;
     left: 0;
-    opacity: 50%;
-    z-index: 0;
+    opacity: 30%;
+    z-index: 1;
 }
 
-.content{
+.content {
     text-align: center;
     margin: auto;
 }
-#welcome h1{
+
+#welcome h1 {
     z-index: 1;
 }
+
 /* header content */
-.header-content{
+.header-content {
     background-color: #f8fcf9;
 }
-.col-lg-4{
+
+.col-lg-4 {
     text-align: left;
     align-items: center;
     padding: 30px;
 }
-.col-lg-4 i{
+
+.col-lg-4 i {
     font-size: 40px;
     color: #5cb874;
 
 }
-.col-lg-4 h3{
+
+.col-lg-4 h3 {
     padding: 10px 0;
 }
 
 /* about us */
-.about{
+.about {
     margin: auto;
 }
-#about-head{
+
+#about-head {
     text-align: center;
     padding: 20px 0;
 }
-.headings h1{
+
+.headings h1 {
     position: relative;
 }
-.headings h1::after{
+
+.headings h1::after {
     content: "";
     position: absolute;
     display: block;
@@ -99,26 +117,30 @@ li{
     bottom: -10px;
     left: calc(50% - 20px);
 }
-.headings p{
+
+.headings p {
     padding: 10px 0;
 }
 
 /* about us content flex */
-.flex-about{
+.flex-about {
     border: 0.5px solid lightgray;
 }
-.flex-about span{
+
+.flex-about span {
     font-size: 24px;
     font-weight: 400;
     color: #6ec083;
 }
-.flex-about p{
+
+.flex-about p {
     color: #aaaaaa;
     font-size: 15px;
     margin: 0;
     padding: 0;
 }
-.flex-about h3{
+
+.flex-about h3 {
     font-size: 26px;
     font-weight: 300;
     padding: 0;
@@ -126,73 +148,188 @@ li{
 }
 
 /* our clients */
-.our-clients{
+.our-clients {
     padding: 25px 0;
 }
-.headings{
+
+.headings {
     text-align: center;
     padding: 25px 0;
 }
-#logo-flex{
+
+#logo-flex {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-#logo-flex img{
+
+#logo-flex img {
     height: 30px;
     width: auto;
     opacity: 0.5;
 }
 
 /* services */
-.service-content{
+.service-content {
     text-align: center;
     padding: 25px 10px;
     background: #fff;
     box-shadow: 0px 5px 90px 0px rgb(110 123 131 / 10%);
     margin: 10px 0;
 }
-#col-1 i{
+
+#col-1 i {
     color: #47aeff;
 }
-#col-2 i{
+
+#col-2 i {
     color: #ffa76e;
 }
-#col-3 i{
+
+#col-3 i {
     color: #e80368;
 }
-#col-4 i{
+
+#col-4 i {
     color: #ffbb2c;
 }
-#col-5 i{
+
+#col-5 i {
     color: #ff5828;
 }
-#col-6 i{
+
+#col-6 i {
     color: #11dbcf;
 }
 
 /* portfolio */
-.key p{
+.key p {
     margin: 0 5px;
     height: 25px;
     width: 50px;
     text-align: center;
 }
-.all{
+
+.all {
     background-color: #5cb874;
     color: #fff;
     border-radius: 3px;
 }
-#sect-1 img{
+
+#sect-1 img {
     width: 100%;
     margin: 5px;
 }
-#sect-2 img{
+
+#sect-2 img {
     width: 100%;
     margin: 5px;
 }
-#sect-3 img{
+
+#sect-3 img {
     width: 100%;
     margin: 5px;
 
+}
+
+/* team */
+.team {
+    background-color: #f8fcf9;
+}
+
+.team-info {
+    background-color: #fff;
+    box-shadow: 0px 5px 90px 0px rgb(110 123 131 / 10%);
+    margin: 10px 0;
+}
+
+.team-info span {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.team-info i {
+    font-size: 13px;
+    padding: 5px 0;
+    color: #444444;
+}
+
+.team-info p {
+    padding-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+    color: #aaaaaa;
+}
+
+.team-icon i {
+    font-size: 20px;
+    color: #aaaaaa;
+}
+
+/* contact */
+.contact-left {
+    border-top: 3px solid #5cb874;
+    border-bottom: 3px solid #5cb874;
+    box-shadow: 0px 5px 90px 0px rgb(110 123 131 / 10%);
+}
+
+.contact-info i {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #eaf6ed;
+    padding: 10px;
+    font-size: 30px;
+    margin: 0 4px;
+}
+
+.contact-right {
+    border-top: 3px solid #5cb874;
+    border-bottom: 3px solid #5cb874;
+    box-shadow: 0px 5px 90px 0px rgb(110 123 131 / 10%);
+}
+
+form .container {
+    border: 0.5px solid lightgray;
+}
+
+form button {
+    height: 40px;
+    border: none;
+    background-color: #5cb874;
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+/* footer */
+.footer{
+    background-color: #222222;
+    color: #fff;
+}
+.footer h1{
+    font-weight: 700;
+}
+.footer-icon i{
+    font-size: 20px;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #5cb874;
+    color: #fff;
+    padding: 11px;
+}
+.green{
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+.bootstrap{
+    color: #5cb874;
+}
+.footer p{
+    font-size: 14px;
 }
