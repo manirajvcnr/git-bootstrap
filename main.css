@@ -170,35 +170,37 @@ li {
 }
 
 /* services */
-.service-content {
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.div {
     text-align: center;
-    padding: 25px 10px;
     background: #fff;
     box-shadow: 0px 5px 90px 0px rgb(110 123 131 / 10%);
-    margin: 10px 0;
 }
 
-#col-1 i {
+#co-1 i {
     color: #47aeff;
 }
 
-#col-2 i {
+#co-2 i {
     color: #ffa76e;
 }
 
-#col-3 i {
+#co-3 i {
     color: #e80368;
 }
 
-#col-4 i {
+#co-4 i {
     color: #ffbb2c;
 }
 
-#col-5 i {
+#co-5 i {
     color: #ff5828;
 }
 
-#col-6 i {
+#co-6 i {
     color: #11dbcf;
 }
 
